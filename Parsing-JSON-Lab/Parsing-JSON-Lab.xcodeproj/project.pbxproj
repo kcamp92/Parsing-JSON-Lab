@@ -14,6 +14,10 @@
 		0B03BC002315AC5B00FE827B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B03BBFE2315AC5B00FE827B /* LaunchScreen.storyboard */; };
 		0B03BC0B2315AC5B00FE827B /* Parsing_JSON_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B03BC0A2315AC5B00FE827B /* Parsing_JSON_LabTests.swift */; };
 		0B03BC162315AC5B00FE827B /* Parsing_JSON_LabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B03BC152315AC5B00FE827B /* Parsing_JSON_LabUITests.swift */; };
+		0BA8E6CD2315C7C1009660CA /* colorsAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BA8E6CC2315C7C1009660CA /* colorsAPI.json */; };
+		0BA8E6CF2315C979009660CA /* weathersAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BA8E6CE2315C979009660CA /* weathersAPI.json */; };
+		0BA8E6D12315CBA2009660CA /* randomUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BA8E6D02315CBA2009660CA /* randomUser.json */; };
+		0BA8E6D92315D052009660CA /* colorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8E6D82315D052009660CA /* colorsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0B03BC112315AC5B00FE827B /* Parsing-JSON-LabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parsing-JSON-LabUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B03BC152315AC5B00FE827B /* Parsing_JSON_LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing_JSON_LabUITests.swift; sourceTree = "<group>"; };
 		0B03BC172315AC5C00FE827B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA8E6CC2315C7C1009660CA /* colorsAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorsAPI.json; sourceTree = "<group>"; };
+		0BA8E6CE2315C979009660CA /* weathersAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weathersAPI.json; sourceTree = "<group>"; };
+		0BA8E6D02315CBA2009660CA /* randomUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUser.json; sourceTree = "<group>"; };
+		0BA8E6D82315D052009660CA /* colorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		0B03BBE92315AC5900FE827B = {
 			isa = PBXGroup;
 			children = (
+				0BA8E6D72315D02D009660CA /* APIs-Model */,
+				0BA8E6D52315CE98009660CA /* JSON-APIs */,
 				0B03BBF42315AC5900FE827B /* Parsing-JSON-Lab */,
 				0B03BC092315AC5B00FE827B /* Parsing-JSON-LabTests */,
 				0B03BC142315AC5B00FE827B /* Parsing-JSON-LabUITests */,
@@ -123,6 +133,24 @@
 				0B03BC172315AC5C00FE827B /* Info.plist */,
 			);
 			path = "Parsing-JSON-LabUITests";
+			sourceTree = "<group>";
+		};
+		0BA8E6D52315CE98009660CA /* JSON-APIs */ = {
+			isa = PBXGroup;
+			children = (
+				0BA8E6D02315CBA2009660CA /* randomUser.json */,
+				0BA8E6CE2315C979009660CA /* weathersAPI.json */,
+				0BA8E6CC2315C7C1009660CA /* colorsAPI.json */,
+			);
+			path = "JSON-APIs";
+			sourceTree = "<group>";
+		};
+		0BA8E6D72315D02D009660CA /* APIs-Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BA8E6D82315D052009660CA /* colorsModel.swift */,
+			);
+			path = "APIs-Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +257,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA8E6CF2315C979009660CA /* weathersAPI.json in Resources */,
 				0B03BC002315AC5B00FE827B /* LaunchScreen.storyboard in Resources */,
 				0B03BBFD2315AC5B00FE827B /* Assets.xcassets in Resources */,
+				0BA8E6D12315CBA2009660CA /* randomUser.json in Resources */,
+				0BA8E6CD2315C7C1009660CA /* colorsAPI.json in Resources */,
 				0B03BBFB2315AC5900FE827B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +289,7 @@
 			files = (
 				0B03BBF82315AC5900FE827B /* ViewController.swift in Sources */,
 				0B03BBF62315AC5900FE827B /* AppDelegate.swift in Sources */,
+				0BA8E6D92315D052009660CA /* colorsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
