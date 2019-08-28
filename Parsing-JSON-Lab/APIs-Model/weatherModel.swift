@@ -8,11 +8,12 @@
 
 import Foundation
 
-enum JSONError: Error {
-    case decodingError(Error)
-}
-
 struct WeatherData: Codable {
+    
+    enum JSONError: Error {
+        case decodingError(Error)
+    }
+
     let list: [listInfo]
     
     static func getWeatherData(data: Data) throws ->

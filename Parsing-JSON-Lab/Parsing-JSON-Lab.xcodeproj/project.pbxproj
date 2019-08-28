@@ -91,6 +91,7 @@
 		0B03BBE92315AC5900FE827B = {
 			isa = PBXGroup;
 			children = (
+				0BF6D3AF23171561000A8ACD /* DVC */,
 				0BA8E6D72315D02D009660CA /* APIs-Model */,
 				0BA8E6D52315CE98009660CA /* JSON-APIs */,
 				0B03BBF42315AC5900FE827B /* Parsing-JSON-Lab */,
@@ -114,8 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				0B03BBF52315AC5900FE827B /* AppDelegate.swift */,
+				0BA8E6DE2315E0BD009660CA /* WeatherViewController.swift */,
 				0B03BBF92315AC5900FE827B /* Main.storyboard */,
-				0BF6D3AD2316F516000A8ACD /* weatherDetailsViewController.swift */,
 				0B03BBFC2315AC5B00FE827B /* Assets.xcassets */,
 				0B03BBFE2315AC5B00FE827B /* LaunchScreen.storyboard */,
 				0B03BC012315AC5B00FE827B /* Info.plist */,
@@ -155,11 +156,18 @@
 			isa = PBXGroup;
 			children = (
 				0BA8E6DA2315D0C9009660CA /* weatherModel.swift */,
-				0BA8E6DE2315E0BD009660CA /* WeatherViewController.swift */,
 				0BA8E6D82315D052009660CA /* colorsModel.swift */,
 				0BA8E6DC2315D0DE009660CA /* randomUserModel.swift */,
 			);
 			path = "APIs-Model";
+			sourceTree = "<group>";
+		};
+		0BF6D3AF23171561000A8ACD /* DVC */ = {
+			isa = PBXGroup;
+			children = (
+				0BF6D3AD2316F516000A8ACD /* weatherDetailsViewController.swift */,
+			);
+			path = DVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
