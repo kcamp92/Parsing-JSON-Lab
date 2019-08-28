@@ -21,33 +21,45 @@ class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadWeatherData()
+        weatherTableView.dataSource = self
+        weatherTableView.delegate = self
 
         // Do any additional setup after loading the view.
     }
     
     
     func loadWeatherData() {
-       
+        guard let pathToData = Bundle.main.path(forResource: "weathersAPI", ofType: "json") else {
+            fatalError ("weathersAPI.json file not found")
+        }
+        let internalUrl = URL(fileURLWithPath: pathToData)
+        do {
+            let data = try Data(contentsOf: internalUrl)
+            let weatherFromJSON = try
+           weatherInfo = WeatherData.getWeatherData(data: data)
+            
+        } catch {
+            print(error)
+        }
     }
   
-//    
-//    private func loadData() {
-//        guard let pathToData = Bundle.main.path(forResource: "episode", ofType: "json") else {
-//            fatalError("episodes.json file not found")
-//        }
-//        let internalUrl = URL(fileURLWithPath: pathToData)
-//        do {
-//            let data = try Data(contentsOf: internalUrl)
-//            let episodesFromJSON = try Episode.getEpisodes(from: data)
-//            episodes = episodesFromJSON
-//        }
-//        catch {
-//            fatalError("An error occurred: \(error)")
-//        }
-//    }
+    
+    
 
 }
-extension WeatherViewController: UITableViewDelegate {}
+extension WeatherViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let storyBoard = storyboard?.instantiateViewController(withIdentifier: "weatherDetailsViewController") as? weatherDetailsViewController {
+            storyBoard.allWeatherInfo = weatherInfo[indexPath.row]
+            
+            navigationController?.pushViewController(storyBoard, animated: true)
+            
+        }
+    }
+    
+    
+}
 
 extension WeatherViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
