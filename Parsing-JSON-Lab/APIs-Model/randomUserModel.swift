@@ -1,5 +1,5 @@
 //
-//  colorsModel.swift
+//  randomUserModel.swift
 //  Parsing-JSON-Lab
 //
 //  Created by Krystal Campbell on 8/27/19.
@@ -7,8 +7,4 @@
 //
 
 import Foundation
-struct RandomUser: Codable {
-    let name: String
-    let runtime: Int
-    let summary: String
-}
+
