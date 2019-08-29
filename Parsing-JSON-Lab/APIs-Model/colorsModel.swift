@@ -7,8 +7,8 @@
 //
 
 import Foundation
-struct RandomUser: Codable {
-    let name: String
-    let runtime: Int
-    let summary: String
-}
+//struct RandomUser: Codable {
+//    let name: String
+//    let runtime: Int
+//    let summary: String
+//}
