@@ -22,12 +22,28 @@
                                 <rect key="frame" x="0.0" y="2.5" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="bmJ-Im-I4j">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" textLabel="7dv-Ie-POG" detailTextLabel="gc0-Ow-zWG" style="IBUITableViewCellStyleSubtitle" id="bmJ-Im-I4j">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bmJ-Im-I4j" id="aaB-MR-LVN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7dv-Ie-POG">
+                                                    <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gc0-Ow-zWG">
+                                                    <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -92,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QT-bX-SjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.8840579710147" y="240.40178571428569"/>
+            <point key="canvasLocation" x="1512" y="240"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="Gfu-co-FNW">
@@ -149,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RsC-JC-sog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="-467"/>
+            <point key="canvasLocation" x="628" y="-462"/>
         </scene>
         <!--Weather Details View Controller-->
         <scene sceneID="653-5C-LPs">
@@ -184,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUU-JC-qnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.8840579710147" y="-467.41071428571428"/>
+            <point key="canvasLocation" x="1513" y="-462"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dIz-L9-bhb">
@@ -205,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="-1296" y="-276"/>
         </scene>
-        <!--View Controller-->
+        <!--Colors View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="colorsViewController" id="BYZ-38-t0r" customClass="colorsViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,7 +233,7 @@
                                 <rect key="frame" x="0.0" y="2.5" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uWV-A8-TpB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="colorCell" id="uWV-A8-TpB">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uWV-A8-TpB" id="I5g-3q-1vw">
@@ -241,6 +257,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jsc-OL-gIO"/>
+                    <connections>
+                        <outlet property="colorsTableView" destination="yHs-r9-9Bt" id="kUB-uI-d1j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,13 +278,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhc-qW-SG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1832" y="1032"/>
+            <point key="canvasLocation" x="1512" y="1032"/>
         </scene>
-        <!--Item 1-->
+        <!--Weather-->
         <scene sceneID="6A5-1n-Bfz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M86-Yd-NpN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="uwL-zC-o1B"/>
+                    <tabBarItem key="tabBarItem" title="Weather" id="uwL-zC-o1B"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5kl-mL-rgo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -280,11 +299,11 @@
             </objects>
             <point key="canvasLocation" x="-284.05797101449275" y="-462.05357142857139"/>
         </scene>
-        <!--Item 2-->
+        <!--Users-->
         <scene sceneID="MBe-Dv-4dj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2RC-Mx-zbY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="5GL-lU-ENu"/>
+                    <tabBarItem key="tabBarItem" title="Users" id="5GL-lU-ENu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pKy-gT-WWA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -299,11 +318,11 @@
             </objects>
             <point key="canvasLocation" x="-284" y="240"/>
         </scene>
-        <!--Item-->
+        <!--Colors-->
         <scene sceneID="Seo-ek-plX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eMw-OJ-eph" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3Mf-ZT-Anb"/>
+                    <tabBarItem key="tabBarItem" title="Colors" id="3Mf-ZT-Anb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kou-qU-n1y">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
