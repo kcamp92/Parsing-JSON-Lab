@@ -6,7 +6,7 @@
 //  Copyright © 2019 Krystal Campbell. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct ColorData: Codable {
     
@@ -26,19 +26,19 @@ struct ColorData: Codable {
                     throw JSONError.decodingError(error)
                 }
         }
-
-    struct colorInfo: Codable {
+}
+    struct colorInfo:Codable {
         let hex: Hex
         let rgb: RGB
-        let name: Name
+        let name: ColorName
     }
     
-    struct Name: Codable {
+    struct ColorName:Codable {
         let value: String
         
     }
     
-    struct Hex: Codable {
+struct Hex:Codable {
         let clean: String
     }
     
@@ -47,8 +47,13 @@ struct ColorData: Codable {
     }
     
     struct Fraction: Codable {
-        let r: Double
-        let g: Double
-        let b: Double
+        let r: CGFloat
+        let g: CGFloat
+        let b: CGFloat
+        
+        func colorConverter() -> UIColor {
+            let color = UIColor(red: r, green: g, blue: b, alpha: 1)
+            return color
+        }
     }
-}
+
