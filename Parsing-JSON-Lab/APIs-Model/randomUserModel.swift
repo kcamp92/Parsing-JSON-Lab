@@ -13,38 +13,34 @@ struct UserData: Codable {
     enum JSONError: Error {
         case decodingError(Error)
     }
-
+    
     let results: [resultsInfo]
-
+    
     static func getUserData(data: Data) throws ->
         [resultsInfo] {
             do {
                 let userData = try JSONDecoder().decode(UserData.self, from: data)
-
+                
                 return userData.results
             }catch{
                 throw JSONError.decodingError(error)
             }
     }
-
+    
 }
 
 struct resultsInfo: Codable {
     let name: Name
-    let email: Email
+    let email: String
     let location: Location
     let dob: DOB
-    let phone: Phone
+    let phone: String
 }
 
 struct Name: Codable {
     let first: String
     let last: String
 }
-struct Email: Codable {
-    let email: String
-}
-
 
 struct Location: Codable {
     let street: String
@@ -55,7 +51,4 @@ struct Location: Codable {
 
 struct DOB: Codable {
     let date: String
-}
-struct Phone: Codable {
-    let phone: String
 }

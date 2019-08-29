@@ -20,7 +20,7 @@ class randomUserViewController: UIViewController {
         super.viewDidLoad()
         loadUserData()
         randomUserTableVIew.dataSource = self
-        // randomUserTableVIew.delegate = self
+        randomUserTableVIew.delegate = self
         
     }
     @IBOutlet weak var randomUserTableVIew: UITableView!
@@ -41,9 +41,16 @@ class randomUserViewController: UIViewController {
     }
 }
 
-//extension randomUserViewController: UITableViewDelegate {
-//
-//}
+extension randomUserViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let storyBoard = storyboard?.instantiateViewController(withIdentifier: "userDetailsViewController") as? userDetailsViewController {
+            storyBoard.allUserInfo = userInfo[indexPath.row]
+            
+            navigationController?.pushViewController(storyBoard, animated: true)
+            
+        }
+    }
+}
 
 extension randomUserViewController: UITableViewDataSource {
     
@@ -55,7 +62,7 @@ extension randomUserViewController: UITableViewDataSource {
         let cell = randomUserTableVIew.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
         let resultsInfo = userInfo[indexPath.row]
         cell.textLabel?.text = "\(resultsInfo.name.first.capitalized) \(resultsInfo.name.last.capitalized)"
-        cell.detailTextLabel?.text = resultsInfo.email.email
+        cell.detailTextLabel?.text = resultsInfo.email
         return cell
     }
     
