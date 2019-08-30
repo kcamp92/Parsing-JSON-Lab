@@ -265,20 +265,40 @@
             </objects>
             <point key="canvasLocation" x="625" y="1032"/>
         </scene>
-        <!--View Controller-->
+        <!--Colors Details View Controller-->
         <scene sceneID="dwy-bj-Uh2">
             <objects>
-                <viewController id="cGk-ne-daL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="colorsDetailsViewController" id="cGk-ne-daL" customClass="colorsDetailsViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A71-xG-Jdj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rgb values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg3-qy-BLa">
+                                <rect key="frame" x="38" y="171" width="190" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hex values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ws-E3-IWy">
+                                <rect key="frame" x="38" y="298" width="162" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="br5-HJ-iG8"/>
                     </view>
+                    <connections>
+                        <outlet property="hex" destination="7Ws-E3-IWy" id="lC8-OS-DMS"/>
+                        <outlet property="rgbValues" destination="vg3-qy-BLa" id="Ruv-gh-Gk1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhc-qW-SG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1512" y="1032"/>
+            <point key="canvasLocation" x="1511.5942028985507" y="1031.9196428571429"/>
         </scene>
         <!--Weather-->
         <scene sceneID="6A5-1n-Bfz">

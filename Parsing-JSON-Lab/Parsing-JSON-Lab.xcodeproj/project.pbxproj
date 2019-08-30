@@ -24,6 +24,7 @@
 		0BF6D3B1231729AD000A8ACD /* randomUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3B0231729AD000A8ACD /* randomUserViewController.swift */; };
 		0BF6D3B3231818F8000A8ACD /* userDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3B2231818F8000A8ACD /* userDetailsViewController.swift */; };
 		0BF6D3E8231873F9000A8ACD /* colorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3E7231873F9000A8ACD /* colorsViewController.swift */; };
+		0BF6D3EA231886B1000A8ACD /* colorsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3E9231886B1000A8ACD /* colorsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		0BF6D3B0231729AD000A8ACD /* randomUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomUserViewController.swift; sourceTree = "<group>"; };
 		0BF6D3B2231818F8000A8ACD /* userDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDetailsViewController.swift; sourceTree = "<group>"; };
 		0BF6D3E7231873F9000A8ACD /* colorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorsViewController.swift; sourceTree = "<group>"; };
+		0BF6D3E9231886B1000A8ACD /* colorsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorsDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				0BF6D3AD2316F516000A8ACD /* weatherDetailsViewController.swift */,
 				0BF6D3B2231818F8000A8ACD /* userDetailsViewController.swift */,
+				0BF6D3E9231886B1000A8ACD /* colorsDetailsViewController.swift */,
 			);
 			path = DVC;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				0BA8E6D92315D052009660CA /* colorsModel.swift in Sources */,
 				0BF6D3B3231818F8000A8ACD /* userDetailsViewController.swift in Sources */,
 				0BF6D3B1231729AD000A8ACD /* randomUserViewController.swift in Sources */,
+				0BF6D3EA231886B1000A8ACD /* colorsDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
