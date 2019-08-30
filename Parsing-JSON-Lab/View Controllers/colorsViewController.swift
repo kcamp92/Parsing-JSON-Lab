@@ -16,7 +16,7 @@ class colorsViewController: UIViewController {
         }
         
     }
-
+    
     @IBOutlet weak var colorsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,9 +24,7 @@ class colorsViewController: UIViewController {
         super.viewDidLoad()
         loadColorData()
         colorsTableView.dataSource = self
-        //colorsTableView.delegate = self
-        
-        // Do any additional setup after loading the view.
+        colorsTableView.delegate = self
     }
     
     
@@ -44,9 +42,18 @@ class colorsViewController: UIViewController {
             print(error)
         }
     }
-    
-   
 }
+extension colorsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let storyBoard = storyboard?.instantiateViewController(withIdentifier: "colorsDetailsViewController") as? colorsDetailsViewController {
+            storyBoard.allColorInfo = allColors[indexPath.row]
+            
+            navigationController?.pushViewController(storyBoard, animated: true)
+        }
+    }
+}
+
+
 extension colorsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -62,6 +69,3 @@ extension colorsViewController: UITableViewDataSource {
     }
 }
 
-// extension colorsViewController: UITableViewDelegate{
-
-//}
